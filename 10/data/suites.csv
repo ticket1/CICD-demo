@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","630","Click site title to go home","","Sat Dec 06 12:21:39 UTC 2025","passed","Sat Dec 06 12:21:40 UTC 2025","Blog Functionality Tests","readmore.spec.js","",""
+"","839","Click ""Show all"" posts","","Sat Dec 06 12:21:38 UTC 2025","passed","Sat Dec 06 12:21:39 UTC 2025","Blog Functionality Tests","readmore.spec.js","",""
+"","5320","Search for ""123""","","Sat Dec 06 12:21:32 UTC 2025","failed","Sat Dec 06 12:21:38 UTC 2025","Blog Functionality Tests","readmore.spec.js","",""
+"","988","Click ""Read more"" button","","Sat Dec 06 12:21:31 UTC 2025","passed","Sat Dec 06 12:21:32 UTC 2025","Blog Functionality Tests","readmore.spec.js","",""
