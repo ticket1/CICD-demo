@@ -1,0 +1,75 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to main content":
+    - /url: "#main"
+  - generic [ref=e7]:
+    - banner [ref=e8]:
+      - generic [ref=e9]:
+        - button [ref=e10] [cursor=pointer]:
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - button "Search" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+          - generic:
+            - generic:
+              - search
+        - generic [ref=e18]:
+          - generic [ref=e21]:
+            - heading "tankuku.com" [level=1] [ref=e23]
+            - paragraph
+          - navigation
+    - main [ref=e25]:
+      - heading "Posts" [level=2] [ref=e26]
+      - feed [ref=e30]:
+        - article [ref=e31]:
+          - button "Share" [ref=e35] [cursor=pointer]:
+            - img [ref=e37]
+          - link "October 05, 2017" [ref=e42] [cursor=pointer]:
+            - /url: https://pleasetankuku.blogspot.com/2017/10/blog-post.html
+            - time [ref=e43]: October 05, 2017
+          - generic [ref=e44]:
+            - generic [ref=e45]: coming soon
+            - text: …
+          - generic [ref=e46]:
+            - link "Post a Comment" [ref=e50] [cursor=pointer]:
+              - /url: https://pleasetankuku.blogspot.com/2017/10/blog-post.html#comments
+              - img [ref=e51]
+              - text: Post a Comment
+            - link "Read more" [ref=e54] [cursor=pointer]:
+              - /url: https://pleasetankuku.blogspot.com/2017/10/blog-post.html
+    - contentinfo [ref=e56]:
+      - generic [ref=e58]:
+        - link "Powered by Blogger" [ref=e60] [cursor=pointer]:
+          - /url: https://www.blogger.com
+          - img [ref=e61]
+          - text: Powered by Blogger
+        - generic [ref=e63]:
+          - text: Theme images by
+          - link "Michael Elkan" [ref=e64] [cursor=pointer]:
+            - /url: http://www.offset.com/photos/394244
+  - complementary [ref=e65]:
+    - button [ref=e67] [cursor=pointer]:
+      - img [ref=e68]
+    - generic [ref=e74]:
+      - link [ref=e75] [cursor=pointer]:
+        - /url: https://www.blogger.com/profile/03232071396081962036
+        - img [ref=e77]
+      - generic [ref=e79]:
+        - term [ref=e81]:
+          - link "还没好" [ref=e82] [cursor=pointer]:
+            - /url: https://www.blogger.com/profile/03232071396081962036
+        - link "Visit profile" [ref=e83] [cursor=pointer]:
+          - /url: https://www.blogger.com/profile/03232071396081962036
+    - generic [ref=e84]:
+      - group [ref=e86]:
+        - generic "Archive" [ref=e87] [cursor=pointer]:
+          - generic [ref=e88]:
+            - heading "Archive" [level=3] [ref=e89]
+            - img [ref=e90]
+        - text: ()
+      - heading "Report Abuse" [level=3] [ref=e93]:
+        - link "Report Abuse" [ref=e94] [cursor=pointer]:
+          - /url: https://www.blogger.com/go/report-abuse
+```
