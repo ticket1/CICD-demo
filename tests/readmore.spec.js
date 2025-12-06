@@ -21,22 +21,25 @@ test.describe('Blog Functionality Tests', () => {
   test('Search for "123"', async ({ page }) => {
     await page.goto('https://pleasetankuku.blogspot.com/');
     
-    // Blogger 搜尋框通常有的 selector
-    const searchBox = page.locator('input[name="q"]').first(); 
+    // 1. 嘗試找到搜尋框
+    const searchInput = page.locator('input[name="q"]');
     
-    // 如果搜尋框一開始隱藏，嘗試點擊放大鏡 (視主題而定)
-    if (!await searchBox.isVisible()) {
-        const searchIcon = page.locator('.search-toggle, .search-icon, svg.svg-icon-search').first();
-        if (await searchIcon.isVisible()) {
-            await searchIcon.click();
-        }
+    // 2. 檢查是否需要先點擊放大鏡按鈕
+    // 你的 HTML 中，放大鏡按鈕的 class 是 search-expand
+    const searchExpandBtn = page.locator('button.search-expand');
+
+    // 如果搜尋框被隱藏或是按鈕可見，就先點按鈕
+    if (await searchExpandBtn.isVisible()) {
+        await searchExpandBtn.click();
+        // 等待搜尋框出現
+        await expect(searchInput).toBeVisible();
     }
+
+    // 3. 輸入內容並搜尋
+    await searchInput.fill('123');
+    await searchInput.press('Enter');
     
-    await expect(searchBox).toBeVisible();
-    await searchBox.fill('123');
-    await searchBox.press('Enter');
-    
-    // 驗證 URL 包含搜尋參數
+    // 4. 驗證 URL 是否跳轉 (包含 q=123)
     await expect(page).toHaveURL(/.*q=123/);
   });
 
