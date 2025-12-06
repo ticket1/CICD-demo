@@ -1,0 +1,1 @@
+{"c0246290cbfcc5f7ea5d8212ff0494fd:d41d8cd98f00b204e9800998ecf8427e":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"ff9a43bf1a949a56","reportUrl":"https://ticket1.github.io/CICD-demo/9/#testresult/ff9a43bf1a949a56","status":"passed","time":{"start":1765022839733,"stop":1765022840230,"duration":497}}]}}
